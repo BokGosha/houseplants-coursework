@@ -3,18 +3,18 @@ document.addEventListener('DOMContentLoaded', displayFavorites);
 function displayFavorites() {
     favoriteItems = JSON.parse(localStorage.getItem('favoriteItems')) || [];
 
-    var countElement = document.getElementById("favoriteCount");
+    let countElement = document.getElementById("favoriteCount");
     
     countElement.innerText = favoriteItems.length;
     
-    var favoritesContainer = document.getElementById('gallery-container');
+    let favoritesContainer = document.getElementById('gallery-container');
     
     favoriteItems.forEach(function(item) {
-        var imageContainer = document.createElement('div');
+        let imageContainer = document.createElement('div');
         
         imageContainer.classList.add('image');
     
-        var image = document.createElement('img');
+        let image = document.createElement('img');
         image.classList.add('image_i');
 
         switch(item) {
@@ -46,13 +46,13 @@ function displayFavorites() {
 
         image.setAttribute('alt', item);
     
-        var description = document.createElement('div');
+        let description = document.createElement('div');
         description.classList.add('description');
     
-        var heading = document.createElement('h2');
+        let heading = document.createElement('h2');
         heading.textContent = item;
     
-        var link = document.createElement('a');
+        let link = document.createElement('a');
 
         switch(item) {
             case 'Замиокулькас':
@@ -81,11 +81,11 @@ function displayFavorites() {
                 break;
         }
 
-        var button = document.createElement('button');
+        let button = document.createElement('button');
         button.textContent = 'Подробнее';
         link.appendChild(button);
 
-        var likeContainer = document.createElement('button');
+        let likeContainer = document.createElement('button');
         likeContainer.classList.add('like-container');
 
         switch(item) {
@@ -115,7 +115,7 @@ function displayFavorites() {
                 break;
         }
         
-        var likeButton = document.createElement('img');
+        let likeButton = document.createElement('img');
         likeButton.classList.add('like-button');
         likeButton.setAttribute('src', 'heart_1.png');
         likeButton.setAttribute('width', '16');

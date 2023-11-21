@@ -38,9 +38,9 @@ function toggleLike(button) {
 }
 
 function addToFavorites(button) {
-    var itemName = button.parentElement.querySelector(".description h2").innerText;
+    let itemName = button.parentElement.querySelector(".description h2").innerText;
 
-    var itemIndex = favoriteItems.indexOf(itemName);
+    let itemIndex = favoriteItems.indexOf(itemName);
 
     if (itemIndex === -1) {
         favoriteItems.push(itemName);
@@ -54,7 +54,7 @@ function addToFavorites(button) {
 }
 
 function updateFavoriteCount() {
-    var countElement = document.getElementById("favoriteCount");
+    let countElement = document.getElementById("favoriteCount");
     
     countElement.innerText = favoriteItems.length;
 }
