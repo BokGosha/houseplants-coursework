@@ -19,28 +19,28 @@ function displayFavorites() {
 
         switch(item) {
             case 'Замиокулькас':
-                image.setAttribute('src', '543.750x0.jpg');
+                image.setAttribute('src', 'images/543.750x0.jpg');
                 break;
             case 'Антуриум':
-                image.setAttribute('src', 'anthurium-210827_1920.jpg');
+                image.setAttribute('src', 'images/anthurium-210827_1920.jpg');
                 break;
             case 'Гипоэстес':
-                image.setAttribute('src', '1-58.jpg');
+                image.setAttribute('src', 'images/1-58.jpg');
                 break;
             case 'Колеус':
-                image.setAttribute('src', '1650526944_37-vsegda-pomnim-com-p-kak-viglyadit-tsvetok-koleus-foto-38.jpg');
+                image.setAttribute('src', 'images/1650526944_37-vsegda-pomnim-com-p-kak-viglyadit-tsvetok-koleus-foto-38.jpg');
                 break;
             case 'Ктенанта':
-                image.setAttribute('src', 'f0bbfd30cc958545fb03fdc8b5b83735.jpg');
+                image.setAttribute('src', 'images/f0bbfd30cc958545fb03fdc8b5b83735.jpg');
                 break;
             case 'Венерина мухоловка':
-                image.setAttribute('src', '8f85af9633aa75e818603a739e627c5b.jpeg');
+                image.setAttribute('src', 'images/8f85af9633aa75e818603a739e627c5b.jpeg');
                 break;
             case 'Бегония':
-                image.setAttribute('src', 'f3ca7c9d996533932c528277011d390d.png');
+                image.setAttribute('src', 'images/f3ca7c9d996533932c528277011d390d.png');
                 break;
             case 'Аглаонема':
-                image.setAttribute('src', '382_2.jpg');
+                image.setAttribute('src', 'images/382_2.jpg');
                 break;
         }
 
@@ -117,7 +117,7 @@ function displayFavorites() {
         
         let likeButton = document.createElement('img');
         likeButton.classList.add('like-button');
-        likeButton.setAttribute('src', 'heart_1.png');
+        likeButton.setAttribute('src', 'images/heart_1.png');
         likeButton.setAttribute('width', '16');
         likeButton.setAttribute('height', '16');
 
