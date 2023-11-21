@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+#notification{
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    background: #daddda;
+    border: green 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+    z-index: 6000;
+
+    > ol{
+        visibility: hidden;
+        position: absolute;
+        bottom: -1000px;
+        right: -1000px;
+        list-style: none;
+        padding: 0;
+        counter-reset: notifications_count;
+
+        > li{
+            counter-increment: notifications_count;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            color:#1d5d04;
+            background: white;
+            transition: all 400ms;
+            width: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            > a {
+                text-align: center;
+                width: inherit;
+                position: relative;
+                bottom: 10px;
+                margin-left: 30px;
+            }
+
+            > a::before{
+                color: white;
+                content: counter(notifications_count);
+                position: relative;
+                top: 20px;
+                right: 30px;
+                background: green;
+                text-align: center;
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px rgb(0, 0, 0);
+                padding: 2px;
+            }
+        }
+
+        > li:hover{
+            box-shadow: 0 2px 8px rgb(94, 197, 85);
+            transform: scale(1.01);
+        }
+    }
+}
+
+@keyframes anim{
+    from{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    99%{
+        width: 330px;
+        height: 400px;
+        border-radius: 20px;
+    }
+    to{
+    }
+}
+
+#notification:hover{
+    animation-name: anim;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    border-radius: 20px;
+
+    > ol{
+        visibility: visible;
+        position: static;
+    }
+}
+
+#notification_menu_sym::before{
+    content: "\1F514";
+    color: white;
+}
+
+#notification_menu_sym::after{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    content: "4";
+    border-radius: 50%;
+    border: #002200 1px solid;
+    background: red;
+}
+
+main{
+    margin-top: 110px;
+    min-height: 87vh;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 10px;
+    gap: 20px;
+
+    > img{
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 100%;
+        box-shadow: 0 5px 10px black;
+    }
+
+    > .description{
+        > h2{
+            text-align: center;
+            color:#1d5d04;
+            font-size: 30px;
+        }
+
+        > p{
+            text-align: justify;
+            text-indent: 2rem;
+            line-height: 2;
+            font-size: larger;
+        }
+    }
+}
+
+.advantages{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    > h3{
+        font-size: 25px;
+        color: #1d5d04;
+        padding-left: 2rem;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    > ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0;
+        
+        > li{
+            list-style: none;
+
+            > fieldset{
+                box-shadow: 0 4px 30px rgb(101, 244, 101, 0.505);
+                background-color: #daddda;
+                height: 80%;
+                width: 410px;
+                border-radius: 20px;
+                border: 2px rgb(101, 244, 101, 0.505) solid;
+
+                > legend{
+                    border: 1px rgb(84, 217, 84) solid;
+                    border-radius: 20px;
+                    background-color: #edeaea;
+                    font-size: 20px;
+                    padding: 5px;
+                    color: green;
+                }
+
+                > p{
+                    margin: 0;
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                    text-indent: 30px;
+                    line-height: 1.5;
+                    text-align: justify;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1400px){
+    .introduction{
+        flex-direction: column;
+
+        > img{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .advantages{
+        margin: 0;
+        margin-bottom: 30px;
+
+        > ul{
+            margin: 10px;
+            
+            > li{
+                > fieldset{
+                    width: auto;
+                    height: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px){
+    main{
+        margin-top: 160px;
+    }
+}
