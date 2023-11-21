@@ -16,7 +16,7 @@ body{
     margin: 0;
     overflow: hidden;
     font-family: 'Ubuntu', sans-serif;
-    background-image: url("rastenie_listia_zelenyj_126940_2048x1152.jpg");
+    background-image: url("../images/rastenie_listia_zelenyj_126940_2048x1152.jpg");
 }
 
 .glassmorphism-form{
