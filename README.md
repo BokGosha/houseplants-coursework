@@ -1,10 +1,13 @@
-<h2 style="text-align: center;">Houseplants</h2>
+<center>
+### Houseplants
 
-<p style="text-align: center;">Сoursework dedicated to the creation of an Internet resource focusing on blockchain technologies.</p>
+Сoursework dedicated to the creation of an Internet resource focusing on blockchain technologies.
 
 [View site](https://bokgosha.github.io/houseplants-coursework/)
+</center>
 
 # About The Project
+
 
 # Built with
 Project was built with:
