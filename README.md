@@ -1,8 +1,8 @@
-<div style="text-align: center;">
+<h2 style="text-align: center;">Houseplants</h2>
 
-![favicon](https://github.com/BokGosha/houseplants-coursework/assets/147842599/92a57b0f-95f2-42ad-86ef-86fc6a10c51c)
+<p style="text-align: center;">Сoursework dedicated to the creation of an Internet resource focusing on blockchain technologies.</p>
 
-</div>
+[View site](https://bokgosha.github.io/houseplants-coursework/)
 
 # About The Project
 
