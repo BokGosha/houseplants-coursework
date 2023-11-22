@@ -1,5 +1,5 @@
 # Houseplants
-Сoursework dedicated to the creation of an Internet resource focusing on blockchain technologies.
+Сoursework dedicated to the creation of an Internet resource focusing on houseplants.
 
 [View site](https://bokgosha.github.io/houseplants-coursework/)
 
