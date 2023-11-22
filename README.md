@@ -1,4 +1,8 @@
-# houseplants-coursework
+<div style="text-align: center;">
+
+![favicon](https://github.com/BokGosha/houseplants-coursework/assets/147842599/92a57b0f-95f2-42ad-86ef-86fc6a10c51c)
+
+</div>
 
 # About The Project
 
