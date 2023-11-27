@@ -45,6 +45,12 @@ function addToFavorites(button) {
     if (itemIndex === -1) {
         favoriteItems.push(itemName);
     } else {
+        let imageElement = button.closest('.image');
+        
+        if (imageElement) {
+            imageElement.style.display = 'none';
+        }
+
         favoriteItems.splice(itemIndex, 1);
     }
     
