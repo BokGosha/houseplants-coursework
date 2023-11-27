@@ -12,6 +12,10 @@ main{
     }
 }
 
+.images::-webkit-scrollbar{
+    display: none;
+}
+
 .description{
     display: flex;
     flex-direction: column;
