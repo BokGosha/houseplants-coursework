@@ -192,28 +192,18 @@ main{
 }
 
 @media (max-width: 500px){
-    main{
-        > .gallery-container{
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(8, auto);
-            grid-template-areas:
-            "image_1"
-            "image_2"
-            "image_3"
-            "image_4"
-            "image_5"
-            "image_6"
-            "image_7"
-            "image_8";
-
-            > .image_1, .image_2, .image_3, .image_4, .image_5, .image_6, .image_7, .image_8{
-                &:active{
-                    > .description{
-                        opacity: 1;
-                    }
-                }
-            }
-        }
+    main .gallery-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+        "image_1"
+        "image_2"
+        "image_3"
+        "image_4"
+        "image_5"
+        "image_6"
+        "image_7"
+        "image_8";
     }
 }
 
